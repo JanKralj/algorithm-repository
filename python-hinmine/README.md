@@ -1,8 +1,8 @@
 [![CHUV](https://img.shields.io/badge/CHUV-LREN-AF4C64.svg)](https://www.unil.ch/lren/en/home.html) 
 [![DockerHub](https://img.shields.io/badge/docker-hbpmip%2Fpython--hinmine-008bb8.svg)](https://hub.docker.com/r/hbpmip/python-hinmine/) 
 [![ImageVersion](https://images.microbadger.com/badges/version/hbpmip/python-hinmine.svg)](https://hub.docker.com/r/hbpmip/python-hinmine/tags "hbpmip/java-rapidminer-knn image tags") 
-[![](https://images.microbadger.com/badges/version/hbpmip/java-rapidminer-naivebayes.svg)](https://microbadger.com/images/hbpmip/python-hinmine "Get your own version badge on microbadger.com") 
-[![](https://images.microbadger.com/badges/image/hbpmip/java-rapidminer-naivebayes.svg)](https://microbadger.com/images/hbpmip/python-hinmine "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/hbpmip/python-hinmine.svg)](https://microbadger.com/images/hbpmip/python-hinmine "Get your own version badge on microbadger.com") 
+[![](https://images.microbadger.com/badges/image/hbpmip/pythin-hinmine.svg)](https://microbadger.com/images/hbpmip/python-hinmine "Get your own image badge on microbadger.com")
 
 # Python HINMine
 
