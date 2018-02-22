@@ -47,8 +47,10 @@ $DOCKER_COMPOSE run sample_data_db_setup
 $DOCKER_COMPOSE run woken_db_setup
 
 echo
-echo "Run the Hinmine algorithm..."
-$DOCKER_COMPOSE run hinmine compute
+echo "Run the Hinmine algorithm on the iris..."
+$DOCKER_COMPOSE run hinmine-iris compute
+echo "And the sample data set"
+$DOCKER_COMPOSE run hinmine-iris compute
 
 
 echo

@@ -6,22 +6,19 @@ ENV DOCKER_IMAGE=hbpmip/python-hinmine:0.1.0 \
     FUNCTION=python-hinmine
 
 # Install system packages
-RUN apt-get update
-RUN apt-get install -y git gcc python3-dev
-
-# Update pip
-RUN python -m pip install --upgrade pip
+RUN apt-get update \
+  && apt-get install -y git gcc python3-dev \
+  && python -m pip install --upgrade pip
 # Install hinmine and its requirements
-RUN git clone -b python3 https://github.com/JanKralj/cf_netSDM.git
 
-WORKDIR cf_netSDM
+COPY netSDM netSDM
+WORKDIR netSDM
 RUN python setup.py install
 WORKDIR /
 
-RUN pip install -r cf_netSDM/requirements.txt
-RUN pip install -r requirements.txt
-
-RUN rm -rf cf_netSDM
+RUN pip install -r netSDM/requirements.txt \
+  && pip install -r requirements.txt \
+  && rm -rf netSDM
 
 COPY mip_hinmine.py /mip_hinmine.py
 
